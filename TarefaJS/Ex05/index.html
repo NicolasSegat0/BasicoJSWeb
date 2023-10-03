@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+          background-color: #010101;
+        }
+    
+        .grupo-calculadora {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+    
+        input {
+          height: 48px;
+          width: 80px;
+          font-size: 1.5rem;
+          box-sizing: border-box;
+        }
+    
+        select {
+          font-size: 1.5rem;
+          text-align: center;
+          height: 48px;
+        }
+    
+        .igual,
+        .resultado {
+          color: #F5F5F5;
+          box-sizing: border-box;
+          margin: 0px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 1;
+        }
+      </style>
+    
+      <div class="grupo-calculadora">
+    
+        <input type="number" name="valor1" id="valor1">
+        <select name="operacao" id="operacao">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">x</option>
+        </select>
+        <input type="number" name="valor2" id="valor2">
+        <p class="igual">=</p>
+        <p class="resultado"></p>
+      </div>
+    
+      <div id="resultado-tabuada">
+    
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
